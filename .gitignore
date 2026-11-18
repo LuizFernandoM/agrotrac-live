@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+/.rabbit-validation/
+/tests/fixtures/
+/.env.*
+!/.env.example

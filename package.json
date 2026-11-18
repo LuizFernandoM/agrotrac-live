@@ -1,0 +1,33 @@
+{
+  "name": "agrotrac-live",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/unit/*.test.ts",
+    "test:integration": "tsx --test tests/integration/*.test.ts",
+    "start": "node dist/main.js",
+    "dev": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.9",
+    "dotenv": "^17.2.3",
+    "ioredis": "^5.8.2",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/node": "^22.19.0",
+    "@types/pg": "^8.15.6",
+    "@types/ws": "^8.18.1",
+    "pg": "^8.16.3",
+    "prettier": "^3.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
